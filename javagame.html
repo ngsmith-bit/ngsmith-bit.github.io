@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body{
+background-color: deepskyblue;
+
+}
+h1{
+color:white;
+}
+p{
+color:RED;
+}
+</style>
+<meta charset="utf-8">
+<title>GAME</title>
+<script> 
+	var compNum =Math.ceil (Math.random()*10);
+	//alert(compNum);
+	var compNum = 5;
+	var user = window.prompt("Guess A Number between 1 through 10","Type number Here");
+	while(compNum !=user)
+	{
+	if(compNum >user)
+		{
+		alert("Too Low")
+		}
+	if(compNum <user)
+		{
+		alert("Too High")
+		}
+	user = window.prompt("Guess A Number between 1 through 10","Type number Here");
+	}
+
+	if(compNum ==user)
+		{
+alert("YOU WIN")			
+		}
+	</script>
+</head>
+<body>
+<p> To repeat the game, press CTRL R!</p>
+</body>
+</html>
